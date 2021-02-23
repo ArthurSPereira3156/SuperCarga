@@ -24,6 +24,10 @@ PrefabInstance:
       value: Line Ready Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4019138229850550, guid: d0b5b8e955f349c4291f89de603b2aa6, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019138229850550, guid: d0b5b8e955f349c4291f89de603b2aa6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -36,6 +40,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4019138229850550, guid: d0b5b8e955f349c4291f89de603b2aa6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019138229850550, guid: d0b5b8e955f349c4291f89de603b2aa6, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -45,14 +53,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4019138229850550, guid: d0b5b8e955f349c4291f89de603b2aa6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4019138229850550, guid: d0b5b8e955f349c4291f89de603b2aa6, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4019138229850550, guid: d0b5b8e955f349c4291f89de603b2aa6, type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4019138229850550, guid: d0b5b8e955f349c4291f89de603b2aa6, type: 3}
@@ -164,33 +164,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
         type: 3}
-      propertyPath: m_Positions.Array.size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
-        type: 3}
-      propertyPath: m_Positions.Array.data[0].x
-      value: -2.9922967
-      objectReference: {fileID: 0}
-    - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
-        type: 3}
-      propertyPath: m_Positions.Array.data[1].x
-      value: -1.507321
-      objectReference: {fileID: 0}
-    - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
-        type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].value
-      value: 0.1005249
-      objectReference: {fileID: 0}
-    - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.ctime1
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.m_NumColorKeys
-      value: 2
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
         type: 3}
@@ -199,8 +174,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
         type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
+      propertyPath: m_Positions.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
+        type: 3}
+      propertyPath: m_Parameters.textureMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e74081e2a6af23c4ab01bd403b712311, type: 2}
+    - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
+        type: 3}
+      propertyPath: m_Positions.Array.data[0].x
+      value: -2.9922967
       objectReference: {fileID: 0}
     - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
         type: 3}
@@ -211,6 +201,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Positions.Array.data[0].z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
+        type: 3}
+      propertyPath: m_Positions.Array.data[1].x
+      value: -1.507321
       objectReference: {fileID: 0}
     - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
         type: 3}
@@ -329,18 +324,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e74081e2a6af23c4ab01bd403b712311, type: 2}
+      propertyPath: m_Parameters.colorGradient.ctime1
+      value: 65535
+      objectReference: {fileID: 0}
     - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
         type: 3}
-      propertyPath: m_Parameters.textureMode
-      value: 0
+      propertyPath: m_Parameters.colorGradient.m_NumColorKeys
+      value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 252612160811606114, guid: d0b5b8e955f349c4291f89de603b2aa6,
+    - target: {fileID: 120684302866675966, guid: d0b5b8e955f349c4291f89de603b2aa6,
         type: 3}
-      propertyPath: m_ColliderMask.m_Bits
-      value: 768
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].value
+      value: 0.1005249
       objectReference: {fileID: 0}
     - target: {fileID: 252612160811606114, guid: d0b5b8e955f349c4291f89de603b2aa6,
         type: 3}
@@ -351,6 +346,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_UseContactForce
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 252612160811606114, guid: d0b5b8e955f349c4291f89de603b2aa6,
+        type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 768
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114619458064726142, guid: d0b5b8e955f349c4291f89de603b2aa6, type: 3}
