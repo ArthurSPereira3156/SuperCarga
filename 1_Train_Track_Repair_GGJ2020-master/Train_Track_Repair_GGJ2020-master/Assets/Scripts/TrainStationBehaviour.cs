@@ -11,6 +11,12 @@ public class TrainStationBehaviour : MonoBehaviour
     public SurfaceEffector2D accelerator;
     public int coalCollected;
 
+    public void Start() {
+        //ultimo trilho para freiar na estação
+        FaseDetail faseDetail = FindObjectOfType(typeof(FaseDetail)) as FaseDetail;
+        accelerator = faseDetail.accelerator;
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         print(other.gameObject.tag);
@@ -31,6 +37,14 @@ public class TrainStationBehaviour : MonoBehaviour
         coalCollectedText.text = "Coal Collected: " + coalCollected;
         accelerator.speed = 0;
         yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        int fase = TrainDAO.getInstance().loadInt("Fase");
+        print("FASE "+fase);
+        if(fase < 1 ){
+            fase = 1;
+        }
+        fase = fase + 1;
+        print("PROXIMA FASE "+fase);
+        TrainDAO.getInstance().saveInt("Fase",fase);
     }
 }

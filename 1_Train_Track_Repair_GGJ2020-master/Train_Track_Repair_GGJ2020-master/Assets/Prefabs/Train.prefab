@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745910533}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.413, y: 0.632, z: 0}
+  m_LocalPosition: {x: 0.45, y: 0.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1549779160766687590}
@@ -4729,7 +4729,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -638540399
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_RenderMode: 0
   m_SortMode: 0
@@ -4843,6 +4843,7 @@ GameObject:
   - component: {fileID: 1549779160933432421}
   - component: {fileID: 1549779160766687591}
   - component: {fileID: 1340749155}
+  - component: {fileID: 9127887002936296404}
   m_Layer: 8
   m_Name: Train
   m_TagString: Player
@@ -4905,7 +4906,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -638540399
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 73a204affaff5c040a6514215c2422bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4955,6 +4956,32 @@ CapsuleCollider2D:
   m_Offset: {x: -0.16922258, y: -0.7234228}
   m_Size: {x: 1.4076127, y: 0.5563927}
   m_Direction: 1
+--- !u!61 &9127887002936296404
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549779160933432347}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.066658914, y: 0.23568726}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 1.19, y: 0.71}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.676459, y: 1.18223}
+  m_EdgeRadius: 0
 --- !u!1 &3616615936304242288
 GameObject:
   m_ObjectHideFlags: 0
@@ -5024,7 +5051,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -638540399
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 7ccb038bda5336548a7509d0d8fb5d1e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5125,7 +5152,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -638540399
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 7ccb038bda5336548a7509d0d8fb5d1e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

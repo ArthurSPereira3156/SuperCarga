@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Coal
+  - Coin
+  - Diamante
   layers:
   - Default
   - TransparentFX
@@ -39,15 +41,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackGround
+    uniqueID: 1773165603
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Coal
     uniqueID: 1765307649
     locked: 0
+  - name: Grass
+    uniqueID: 2566907721
+    locked: 0
   - name: Train
     uniqueID: 3656426897
     locked: 0
-  - name: Grass
-    uniqueID: 2566907721
+  - name: ApenasHUD
+    uniqueID: 1990399565
     locked: 0

@@ -80,7 +80,7 @@ SpriteRenderer:
   m_Size: {x: 5.3792076, y: 3.1439998}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &2034501725
@@ -123,4 +123,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationCurtain: {fileID: 0}
   coalCollectedText: {fileID: 0}
+  accelerator: {fileID: 0}
   coalCollected: 0
