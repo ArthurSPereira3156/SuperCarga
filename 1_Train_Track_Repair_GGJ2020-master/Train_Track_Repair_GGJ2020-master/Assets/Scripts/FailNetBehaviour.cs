@@ -11,6 +11,7 @@ public class FailNetBehaviour : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            AdMobController.getInstance().ShowInterstitial();
         }
     }
 }

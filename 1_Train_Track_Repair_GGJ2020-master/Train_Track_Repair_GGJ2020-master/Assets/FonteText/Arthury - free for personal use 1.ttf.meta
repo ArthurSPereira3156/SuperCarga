@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 069f06e02b7e53f46b4b5d9da1d1d1ad
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: arthury
+  fontNames:
+  - arthury
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3a8d1b62599e12946924893912974242, type: 3}
+  - {fileID: 12800000, guid: da4d12d9e90077e42a0f267ca496462b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

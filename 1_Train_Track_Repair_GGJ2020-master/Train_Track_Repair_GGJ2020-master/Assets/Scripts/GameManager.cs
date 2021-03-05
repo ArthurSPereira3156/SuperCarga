@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+
+  void Start()
+    {
+        // muda para retrato para escolher as fases
+        //Screen.orientation = ScreenOrientation.LandscapeLeft;
+
+    }
   public void playGame(){
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
@@ -16,8 +23,11 @@ public class GameManager : MonoBehaviour
   public void quitGame(){
     Application.Quit();
   }
+  public void levelSelect(){
+		SceneManager.LoadScene("FaseSelect");
+  }
 
   public void playAgain(){
-		SceneManager.LoadScene("Level 1");
+		SceneManager.LoadScene("LevelDinamico");
 	}
 }

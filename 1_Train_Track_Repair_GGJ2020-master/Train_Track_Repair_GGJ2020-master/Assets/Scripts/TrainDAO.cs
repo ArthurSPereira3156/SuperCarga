@@ -5,6 +5,11 @@ using UnityEngine;
 public class TrainDAO : MonoBehaviour
 {
     public static TrainDAO instance;
+    public static string FASE = "Fase";
+    public static string ESTRLA_FASES = "EstrelasFase";
+    public static string SCORE_TOTAL = "ScoreTotal";
+    public static string COINS = "Moedas";
+    public static string DIAMANTES = "Diamantes";
     public static TrainDAO getInstance() {
         if(instance == null)
         {

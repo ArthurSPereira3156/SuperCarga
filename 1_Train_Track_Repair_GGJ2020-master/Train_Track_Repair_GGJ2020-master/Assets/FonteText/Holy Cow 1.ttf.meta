@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 1d0c356285dacbf46b02f8517d5b06e3
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Holy Cow
+  fontNames:
+  - Holy Cow
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ea7a74dfaf9420e4aa9f15d95196f770, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
