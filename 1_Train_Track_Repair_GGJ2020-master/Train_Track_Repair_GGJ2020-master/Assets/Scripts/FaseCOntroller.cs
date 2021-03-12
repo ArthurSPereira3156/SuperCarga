@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class FaseCOntroller : MonoBehaviour
 {
+    public GameObject backGround1;
+    public GameObject backGround2;
+    public GameObject backGround3;
     private GameObject casaFinalColisor ;
     private GameObject casaFinal ;
     public List<GameObject> fases;
@@ -11,11 +14,20 @@ public class FaseCOntroller : MonoBehaviour
     void Awake() {
         print("carregando fase");
         carregarFase();
+        
         print("FIM  carregando fase");
     }
     void Start()
     {
-        
+        if(TrainDAO.getInstance().loadInt("Fase") > 7) {
+            backGround3.SetActive(true);
+            backGround2.SetActive(false);
+            backGround1.SetActive(false);
+        } else {
+             backGround3.SetActive(false);
+            backGround2.SetActive(false);
+            backGround1.SetActive(true);
+        }
         casaFinalColisor = GameObject.Find("Station4");
         casaFinal = GameObject.Find("House");
         casaFinalColisor.transform.position = casaFinal.transform.position;
