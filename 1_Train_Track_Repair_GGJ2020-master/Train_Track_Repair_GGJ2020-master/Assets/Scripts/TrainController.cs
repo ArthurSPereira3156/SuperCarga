@@ -50,11 +50,13 @@ public class TrainController : MonoBehaviour
         TrainDAO.getInstance().saveInt(TrainDAO.SCORE_TOTAL, scoreHud);
     }
     private void addCoins(){
+        AudioController.getInstance().tocarFx(AudioController.getInstance().fxCoin);
         coins++;
         scoreFaseAtual++;
         TrainDAO.getInstance().saveInt(TrainDAO.COINS, coins);
     }
     private void addCDiamantes(){
+        AudioController.getInstance().tocarFx(AudioController.getInstance().fxDiamante);
         diamantes+=5;
         scoreFaseAtual++;
         TrainDAO.getInstance().saveInt(TrainDAO.DIAMANTES, diamantes);

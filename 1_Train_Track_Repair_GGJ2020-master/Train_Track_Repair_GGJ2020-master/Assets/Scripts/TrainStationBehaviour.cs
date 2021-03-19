@@ -11,6 +11,7 @@ public class TrainStationBehaviour : MonoBehaviour
     private ScoreTMP scoreTMP;
     private TrainController trainController;
     public Animator animationCurtain;
+    private AudioController audioController;
     public Text coalCollectedText;
     public SurfaceEffector2D accelerator;
     public int coalCollected;
@@ -24,6 +25,8 @@ public class TrainStationBehaviour : MonoBehaviour
         trainController = FindObjectOfType(typeof(TrainController)) as TrainController;
         //hudCompletou.SetActive(false);
         nextlevel = false;
+        audioController = AudioController.getInstance();
+        audioController.trocarMusica(audioController.musicaFase1);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -61,6 +64,7 @@ public class TrainStationBehaviour : MonoBehaviour
 
     IEnumerator nextLevel()
     {
+        AudioController.getInstance().tocarFx(AudioController.getInstance().fxWin);
         nextlevel = true;
         yield return new WaitForSeconds(1f);
         coalCollectedText.enabled = true;

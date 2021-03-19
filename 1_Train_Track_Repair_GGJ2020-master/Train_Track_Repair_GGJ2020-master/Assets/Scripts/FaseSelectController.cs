@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class FaseSelectController : MonoBehaviour
 {
+    private AudioController audioController;
     private const string FASE_DAO = "Fase";
     private const string BTN_ABERTO = "BtnAberto";
     private const string BTN_ABERTO_1 = "BtnAbertto1";
@@ -14,9 +15,11 @@ public class FaseSelectController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioController = AudioController.getInstance();
         // muda para retrato para escolher as fases
         //Screen.orientation = ScreenOrientation.Portrait;
         int indice = 1;
+        TrainDAO.getInstance().saveInt(TrainDAO.FASE+1,1);
         //percorre as fases para abrir 
         foreach (var item in listaFases)
         {
